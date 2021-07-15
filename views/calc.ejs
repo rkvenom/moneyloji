@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <style>
+        td{
+            padding:5px;
+            text-align:center;
+        }
+    </style>
+    <table border="2">
+        <tr>
+            <th>Name</th>
+            <th>Pay Period</th>
+            <th>Gross Income</th>
+            <th>Income Tax</th>
+            <th>Net Income</th>
+            <th>Super Amount</th>
+        </tr>
+        <tr>
+            <td><%= nameFor %></td>
+            <td><%= paymentDate %></td>
+            <td><%= grossIncome %></td>
+            <td><%= incomeTax %></td>
+            <td><%= netIncome %></td>
+            <td><%= superAmount %></td>
+        </tr>
+    </table>
+  </body>
+</html>
